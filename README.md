@@ -1,3 +1,4 @@
+
 # Dry Bean Classification Using Machine Learning
 
 ## 1. Project Overview
@@ -19,7 +20,14 @@ The objective is to evaluate different classification models using standard perf
 The dataset contains numerical measurements of dry beans, including area, perimeter, major axis length, minor axis length, aspect ratio, eccentricity, convex area, and other shape-related characteristics.
 
 The seven classes are:
-BARBUNYA, BOMBAY, CALI, DERMASON, HOROZ, SEKER, and SIRA.
+
+- BARBUNYA
+- BOMBAY
+- CALI
+- DERMASON
+- HOROZ
+- SEKER
+- SIRA
 
 ## 3. Data Preprocessing
 
@@ -87,4 +95,40 @@ The application loads previously saved models and does not retrain them when a u
 
 ## 9. GitHub Repository
 
-**
+**Repository:** https://github.com/rushali13/dry-bean-classification
+
+## 10. Technologies Used
+
+- Python
+- Pandas and NumPy
+- Scikit-learn
+- Matplotlib and Seaborn
+- Joblib
+- Streamlit
+- Git and GitHub
+
+## 11. Project Structure
+
+```text
+dry-bean-classification/
+│
+├── app.py
+├── train.py
+├── requirements.txt
+├── README.md
+├── test_data.csv
+│
+├── data/
+│   └── train_data.csv
+│
+├── model/
+│   ├── logistic_regression.joblib
+│   ├── decision_tree.joblib
+│   ├── knn.joblib
+│   ├── naive_bayes.joblib
+│   └── svm.joblib
+│
+└── results/
+    ├── model_comparison.csv
+    └── confusion_matrices/
+```
